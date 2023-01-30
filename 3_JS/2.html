@@ -1,0 +1,67 @@
+<!-- Problem Description:
+Create a basic to-do list application that allows users to add and remove tasks from a list. -->
+
+<!-- Hints:
+
+Use JavaScript to handle the logic for adding and removing tasks from the list.
+Use CSS to style the to-do list and task inputs(optional)
+Use HTML to create the structure of the to-do list and task inputs. -->
+
+<!-- Solution Approach:
+
+Create a container div to hold the to-do list and task input.
+Create an unordered list to display the tasks.
+Create an input field and a "Add" button to allow users to input and add tasks.
+Use JavaScript to handle the click event on the "Add" button and add the task to the list.
+Add a "Remove" button to each task in the list and use JavaScript to handle the click event and remove the task.
+ -->
+
+<!-- Test Cases:
+
+Verify that a task can be added to the to-do list.
+Verify that a task can be removed from the to-do list.
+Verify that the input field is cleared after a task is added to the list.
+Verify that an error message is displayed when the user tries to add an empty task. -->
+
+
+
+ <!-- Complete Solution: -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <div>
+    <ul class="todo-list"></ul>
+    <div class="task-input-container">
+      <input class="task-input" type="text">
+      <button class="add-button">Add</button>
+    </div>
+  </div>
+  <script>
+    const todoList = document.querySelector('.todo-list');
+    const taskInput = document.querySelector('.task-input');
+    const addButton = document.querySelector('.add-button');
+    addButton.addEventListener('click', () => {
+      const task = taskInput.value;
+      if (!task) return;
+      const taskElement = document.createElement('li');
+      taskElement.innerHTML = `
+        ${task}
+        <button class="remove-button">Remove</button>
+      `;
+      todoList.appendChild(taskElement);
+      taskInput.value = '';
+      const removeButtons = document.querySelectorAll('.remove-button');
+      removeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          button.parentElement.remove();
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+

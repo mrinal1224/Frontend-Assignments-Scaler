@@ -1,0 +1,58 @@
+<!-- Problem Description:
+Create a counter that can be increased and decreased by clicking on the "increase" and "decrease" buttons. The counter should display the current count value. -->
+
+<!-- Hints:
+
+Use JavaScript to handle the logic for increasing and decreasing the count value.
+Use CSS to style the counter and buttons.(optional)
+Use HTML to create the structure of the counter and buttons. -->
+
+<!-- Solution Approach:
+
+Create a container div to hold the counter display and buttons.
+Create a span to display the count value.
+Create two buttons, one to increase the count and one to decrease the count.
+Use JavaScript to handle the click events on the buttons and update the count value. -->
+
+
+<!-- Test Cases -->
+<!-- Increase Count: Click on the "increase" button and verify that the count value displayed is incremented by 1.
+
+Decrease Count: Click on the "decrease" button and verify that the count value displayed is decremented by 1.
+
+Count Value Display: Verify that the count value displayed is updated correctly when the "increase" and "decrease" buttons are clicked.
+
+Count Minimum Value: Verify that the count value cannot go below 0 when the "decrease" button is clicked multiple times.
+
+Initial Count Value: Verify that the initial count value displayed is 0 when the HTML file is loaded. -->
+
+<!-- Complete Solution: -->
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+</head> 
+<body> 
+  <div class="counter-container"> 
+    <span class="count-display">0</span> 
+    <div class="counter-buttons"> 
+      <button id="decrease-button">-</button> 
+      <button id="increase-button">+</button> 
+    </div> 
+  </div> 
+  <script> 
+    const countDisplay = document.querySelector('.count-display'); 
+    const decreaseButton = document.querySelector('#decrease-button'); 
+    const increaseButton = document.querySelector('#increase-button'); 
+    let count = 0; 
+    decreaseButton.addEventListener('click', () => { 
+      count--; 
+      countDisplay.textContent = count; 
+    }); 
+    increaseButton.addEventListener('click', () => { 
+      count++; 
+      countDisplay.textContent = count; 
+    }); 
+  </script> 
+</body> 
+</html> 

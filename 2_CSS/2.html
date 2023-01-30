@@ -1,0 +1,80 @@
+<!-- Problem Description:
+
+Create an HTML page that demonstrates the use of position property. The page should display 4 boxes, each with a different position value (absolute, relative, fixed, and static). -->
+<!-- 
+Hints:
+
+Use the position property to set the position of the boxes.
+Use top, left, bottom, and right properties to adjust the position of the boxes relative to their parent container. -->
+
+<!-- Test Cases:
+
+Verify that the first box is positioned absolute and has a top and left property set.
+Verify that the second box is positioned relative and has a top and left property set.
+Verify that the third box is positioned fixed and has a bottom and right property set.
+Verify that the fourth box is positioned static. -->
+
+<!-- Solution Approach:
+
+Create an HTML page with 4 div containers representing each box.
+Apply different position values to each box using the position property.
+Use top, left, bottom, and right properties to adjust the position of each box relative to their parent container.
+Add styling to the boxes to give them a visual appearance. -->
+
+
+<!-- Complete Solution -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  .container {
+  width: 100%;
+  height: 500px;
+  background-color: lightgray;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.absolute {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: lightblue;
+}
+
+.relative {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  background-color: lightgreen;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: lightcoral;
+}
+
+.static {
+  background-color: lightyellow;
+}
+
+
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box absolute"></div>
+        <div class="box relative"></div>
+        <div class="box fixed"></div>
+        <div class="box static"></div>
+      </div>
+</body>
+</html>
+
