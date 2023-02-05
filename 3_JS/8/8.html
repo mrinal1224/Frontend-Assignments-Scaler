@@ -1,0 +1,40 @@
+<!-- Problem: Print Key Presses on the Screen
+
+Description:
+Given a HTML page with an input field, write JavaScript code that displays the character of each key press in real-time in a div element on the page.
+
+Hints:
+
+Use the addEventListener method to listen for a "keypress" event on the input field.
+Use the key property of the event object to get the character of each key press.
+Use the innerHTML property to update the div element with the characters.
+
+
+Solution Approach:
+
+Get the input field and the div element using the document.getElementById method.
+Use the addEventListener method to listen for a "keypress" event on the input field.
+In the event listener function, use the key property of the event object to get the character of each key press.
+Use the innerHTML property to update the div element with the characters. -->
+
+
+<!-- Test Cases:
+
+Type characters into the input field, the characters should be displayed in real-time in the div element.
+Delete characters from the input field, the characters should be removed from the div element. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inputField">
+<div id="display"></div>
+</body>
+<script src="8.js"></script>
+</html>

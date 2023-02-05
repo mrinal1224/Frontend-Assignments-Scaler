@@ -1,0 +1,48 @@
+<!-- Problem: Validate a Form on Submit
+
+Description:
+Given a HTML form with two input fields (Name and Email), write JavaScript code that prevents the form from being submitted if either of the fields is empty and displays an error message.
+
+Hints:
+
+Use the addEventListener method to listen for a "submit" event on the form element.
+Use the preventDefault method to prevent the form from being submitted if either of the fields is empty.
+Use the value property of the input fields to get the user's input.
+Use an if-else statement to validate the input fields and display an error message if necessary.
+
+Solution Approach:
+
+Get the form and the input fields using the document.getElementById method.
+Use the addEventListener method to listen for a "submit" event on the form element.
+In the event listener function, use the value property of the input fields to get the user's input.
+Use an if-else statement to validate the input fields and prevent the form from being submitted if either of the fields is empty.
+Display an error message if either of the fields is empty.
+
+BoilerPlate: -->
+
+<!-- Test Cases:
+
+Submit the form with both fields filled in, the form should be submitted successfully.
+Submit the form with either the Name or the Email field empty, the form should not be submitted and an error message should be displayed. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<form id="form">
+    <input type="text" id="name">
+    <input type="email" id="email">
+    <button type="submit">Submit</button>
+  </form>
+  <div id="error"></div> 
+</body>
+<script src="9.js"></script>
+</html>

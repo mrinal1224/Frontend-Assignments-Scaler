@@ -1,0 +1,46 @@
+<!-- Problem Statement: Create a button that is destroyed by clicking on it and two new buttons are created in its place.
+
+Description:
+
+Create a button element in HTML.
+Write JavaScript code that listens for a click event on the button.
+When the button is clicked, use the DOM to remove the button and create two new buttons in its place.
+
+
+Hints:
+
+Use the document.createElement method to create new elements
+Use the element.remove method to remove the original button element
+Use the element.appendChild method to append the new buttons to the page
+
+
+Solution Approach:
+
+Create a button element in HTML using the <button> tag.
+In JavaScript, use the document.querySelector method to select the button element.
+Add a click event listener to the button element using the addEventListener method.
+In the event listener callback function, remove the button element using the element.remove method.
+Create two new buttons using the document.createElement method.
+Append the new buttons to the page using the element.appendChild method. -->
+<!-- 
+Test Cases:
+
+Verify that the original button is displayed on the page.
+Verify that the original button is removed from the page when it is clicked.
+Verify that two new buttons are created in its place when the original button is clicked.
+Verify that the new buttons have the correct text content. -->
+
+<!-- boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton">Destroy Button</button>
+</body>
+<script src="6.js"></script>
+</html>
