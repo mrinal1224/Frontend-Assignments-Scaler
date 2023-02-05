@@ -1,0 +1,15 @@
+/* complete solution */
+
+h1 {
+    font-size: 36px;
+  }
+  
+  p {
+    font-size: 1.5em;
+  }
+  
+  .box {
+    height: 50vh;
+    width: 80%;
+    background-color: lightgray;
+  }

@@ -1,0 +1,46 @@
+<!-- Problem: Create a filter feature for a list of items using DOM concepts.
+
+Hints:
+
+Use an HTML input element to receive the filter value
+Use an HTML unordered list element to display the filtered items
+Use the DOM property value to get the filter value from the input element
+Use the DOM method getElementsByTagName() to get the list items
+Use the DOM method setAttribute() to set the display property of the list items -->
+
+<!-- Solution approach:
+
+Get the references of the input element and unordered list element in HTML using the DOM methods getElementById() and getElementsByTagName() respectively.
+Add an event listener to the input element using the DOM method addEventListener() to listen for the input event.
+In the event listener function, get the filter value from the input element using value property.
+Loop through the list items and compare each item's text content with the filter value.
+If the item's text content does not match the filter value, set its display property to 'none' using setAttribute() method.
+If the item's text content matches the filter value, set its display property to 'block' or '' (empty string) to show it. -->
+
+<!-- Test cases:
+
+Verify that all the items are visible by default.
+Verify that the items are filtered correctly when a value is entered in the input element.
+Verify that the items are displayed correctly when the filter value matches with the text content of an item.
+Verify that the items are hidden correctly when the filter value does not match with the text content of an item. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="filter-input">
+<ul id="item-list">
+  <li>apple</li>
+  <li>banana</li>
+  <li>cherry</li>
+  <li>date</li>
+  <li>Orange</li>
+</ul>
+</body>
+<script src="4.js"></script>
+</html>

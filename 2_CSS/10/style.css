@@ -1,0 +1,23 @@
+/* Solution */
+
+:root {
+    --primary-color: lightblue;
+    --secondary-color: lightgray;
+    --font-size: 16px;
+  }
+  
+  h1 {
+    color: var(--primary-color);
+    font-size: var(--font-size);
+  }
+  
+  p {
+    color: var(--secondary-color);
+    font-size: var(--font-size);
+  }
+  
+  .box {
+    height: 50vh;
+    width: 80%;
+    background-color: var(--secondary-color);
+  }

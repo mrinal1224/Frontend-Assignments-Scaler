@@ -1,0 +1,43 @@
+<!-- Assignment: CSS Units
+
+Problem Description:
+
+You are given a web page with several elements that need to be styled using CSS. Your task is to style these elements using different units of measurement in CSS.
+
+Hints:
+
+CSS supports various units of measurement, including pixels (px), ems (em), rems (rem), percent (%), and viewport units (vh, vw, vmin, vmax).
+The size of an element in pixels is fixed, whereas the size of an element in ems or rems is relative to the font size of the parent element.
+Percent is used to specify the size of an element in relation to its parent element.
+Viewport units are used to specify the size of an element in relation to the size of the viewport.
+
+
+Solution Approach:
+
+Start by creating a CSS file and linking it to your HTML file using the <link> tag.
+In the CSS file, create selectors for the elements you want to style.
+Use the various units of measurement to specify the size of the elements.
+Test your solution by previewing the web page in a browser and verifying that the elements have been styled correctly. -->
+
+
+<!-- Test Cases:
+
+Verify that the text in the <h1> element is 36 pixels in size.
+Verify that the text in the first <p> element has a font size of 1.5 times the size of the parent element's font size.
+Verify that the height of the <div> element is 50% of the viewport height.
+Verify that the width of the <div> element is 80% of the width of its parent element. -->
+
+<!-- Bolierplate -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>My Web Page</h1>
+    <p>This is some sample text that needs to be formatted.</p>
+    <div class="box">
+      <p>This is a box with a specified height and width.</p>
+    </div>
+  </body>
+</html>

@@ -39,29 +39,9 @@ Verify that an error message is displayed when the user tries to add an empty ta
       <button class="add-button">Add</button>
     </div>
   </div>
-  <script>
-    const todoList = document.querySelector('.todo-list');
-    const taskInput = document.querySelector('.task-input');
-    const addButton = document.querySelector('.add-button');
-    addButton.addEventListener('click', () => {
-      const task = taskInput.value;
-      if (!task) return;
-      const taskElement = document.createElement('li');
-      taskElement.innerHTML = `
-        ${task}
-        <button class="remove-button">Remove</button>
-      `;
-      todoList.appendChild(taskElement);
-      taskInput.value = '';
-      const removeButtons = document.querySelectorAll('.remove-button');
-      removeButtons.forEach(button => {
-        button.addEventListener('click', () => {
-          button.parentElement.remove();
-        });
-      });
-    });
-  </script>
+ 
 </body>
+<script src="2.js"></script>
 </html>
 
 

@@ -1,0 +1,33 @@
+/* Boilerplate */
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+
+  .item {
+    background-color: lightgray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+  }
+
+  /* complete solution from here */
+
+  @media (max-width: 767px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .item {
+      width: 100%;
+    }
+  }

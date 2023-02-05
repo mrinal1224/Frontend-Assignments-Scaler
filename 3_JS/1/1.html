@@ -26,7 +26,7 @@ Count Minimum Value: Verify that the count value cannot go below 0 when the "dec
 
 Initial Count Value: Verify that the initial count value displayed is 0 when the HTML file is loaded. -->
 
-<!-- Complete Solution: -->
+<!-- Boilerplate -->
 
 <!DOCTYPE html> 
 <html> 
@@ -40,19 +40,6 @@ Initial Count Value: Verify that the initial count value displayed is 0 when the
       <button id="increase-button">+</button> 
     </div> 
   </div> 
-  <script> 
-    const countDisplay = document.querySelector('.count-display'); 
-    const decreaseButton = document.querySelector('#decrease-button'); 
-    const increaseButton = document.querySelector('#increase-button'); 
-    let count = 0; 
-    decreaseButton.addEventListener('click', () => { 
-      count--; 
-      countDisplay.textContent = count; 
-    }); 
-    increaseButton.addEventListener('click', () => { 
-      count++; 
-      countDisplay.textContent = count; 
-    }); 
-  </script> 
-</body> 
+ </body> 
+ <script src="1.js"></script>
 </html> 
